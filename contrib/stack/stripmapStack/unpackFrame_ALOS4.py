@@ -14,9 +14,9 @@ def cmdLineParse():
     Command line parser.
     '''
 
-    parser = argparse.ArgumentParser(description='Unpack ALOS2 SLC data and store metadata in pickle file.')
+    parser = argparse.ArgumentParser(description='Unpack ALOS4 SLC data and store metadata in pickle file.')
     parser.add_argument('-i','--input', dest='h5dir', type=str,
-            required=True, help='Input ALOS2 directory')
+            required=True, help='Input ALOS4 directory')
     parser.add_argument('-o', '--output', dest='slcdir', type=str,
             required=True, help='Output SLC directory')
     parser.add_argument('-d', '--deskew', dest='deskew', action='store_true',
