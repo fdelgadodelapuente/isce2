@@ -37,7 +37,7 @@ def unpack(hdf5, slcname, deskew=False, polarization='HH'):
         os.mkdir(slcname)
 
     date = os.path.basename(slcname)
-    obj = createSensor('ALOS2')
+    obj = createSensor('ALOS'+imgname[4])
     obj.configure()
     obj._leaderFile = ldrname
     obj._imageFile = imgname
